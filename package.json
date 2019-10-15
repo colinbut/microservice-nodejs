@@ -3,12 +3,14 @@
     "version": "1.0.0",
     "description": "Sample NodeJs microservice",
     "main": "app.js",
+    "private": true,
     "scripts": {
-        "test": "echo \"Error no test specified\" && exit 1"
+        "test": "echo \"Error no test specified\" && exit 1",
+        "start": "node app.js"
     },
     "keywords": [],
     "author": "Colin But",
-    "license": "",
+    "license": "UNLICENSED",
     "dependencies": {
         "express": "^4.17.1"
     }

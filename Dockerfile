@@ -7,4 +7,9 @@ USER nodejs
 WORKDIR /home/nodejs
 COPY . .
 RUN npm install
+
+# Required for deployment to AWS Elastic Beanstalk using Docker platform
+EXPOSE 3000
+
 ENTRYPOINT ["node", "app.js"]
+
